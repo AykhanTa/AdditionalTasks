@@ -59,11 +59,23 @@ Console.WriteLine("Hello, World!");
 
 #region Task4
 int p1, p2, p3;
-p1 = 20;
-p2 = 50;
-p3 = 40;
-if(p1<p2 && p2 < p3)
+p1 = 10;
+p2 = 5;
+p3 = 20;
+if(p1<p2 && p1 < p3)
 {
     Console.WriteLine(p2+p3);
+}
+else if(p2<p1 && p2 < p3)
+{
+    Console.WriteLine(p1+p3);
+}
+else if (p3 < p2 && p3< p1)
+{
+    Console.WriteLine(p2+p1);
+}
+else
+{
+    Console.WriteLine(p1+p2+p3);
 }
 #endregion
